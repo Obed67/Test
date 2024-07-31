@@ -1,0 +1,143 @@
+body {
+    background-color: #eef1f8;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.container h1{
+    text-align: center;
+    margin-left: 5%;
+}
+
+#section-1 {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.espace {
+    background-color: #fff;
+    border-radius: 15px;
+    border: 1px solid #343a40;
+    width: 150%;
+    height: 15%;
+}
+
+.identite-demandeur {
+    background-color: #fff;
+    border-radius: 15px;
+    border: 1px solid #343a40;
+}
+
+.divider
+{
+    width:100%;
+    height: 1px;
+    background: rgb(197, 196, 196);
+    margin: 0 auto;
+    margin-bottom: 5%;
+}
+
+.red{
+    color: red;
+}
+
+.info{
+    display: flex;
+}
+
+.btnsuivant{
+    margin-left: 93%;
+}
+
+
+/* Personnalisation du dropdown */
+.custom-dropdown {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+
+.custom-dropdown .dropdown-toggle {
+    width: 100%;
+    text-align: right;
+    padding-left: 0;
+}
+
+/* Les radios */
+.custom-checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Ajuste l'espace entre les cases à cocher */
+}
+.custom-checkbox-group .form-check {
+    display: flex;
+    align-items: center;
+}
+.custom-checkbox-group .form-check-input {
+    margin-right: 10px; /* Ajuste l'espace entre la case à cocher et le texte */
+}
+.custom-text {
+    margin-right: 20px; /* Ajuste l'espace entre le texte et les cases à cocher */
+    font-weight: bold; /* Style du texte */
+}
+
+
+/* Progression */
+.progr {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.step {
+    position: relative;
+    flex: 1;
+    text-align: center;
+}
+
+.step .bullet {
+    position: relative;
+    width: 30px; /* Taille des icônes */
+    height: 30px; /* Taille des icônes */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    z-index: 1; /* Assure que les icônes sont au-dessus de la ligne */
+}
+
+.step .bullet i {
+    color: #ccc; /* Couleur des icônes par défaut */
+    font-size: 24px; /* Taille des icônes */
+    transition: color 0.3s ease; /* Transition pour les icônes */
+}
+
+.step.active .bullet i {
+    color: red; /* Couleur des icônes lorsque la section est active */
+}
+
+.step .bullet::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 100%; /* Positionne la ligne juste après l'icône */
+    right: 100%;
+    width: 550%; /* Ajuste la longueur de la ligne */
+    height: 2px;
+    background-color: #ccc; /* Couleur de la ligne par défaut */
+    z-index: -1; /* Assure que la ligne est derrière les icônes */
+    transform: translateX(0); /* Pas de décalage horizontal nécessaire */
+    transition: background-color 0.3s ease; /* Transition pour la ligne */
+}
+
+.step.active .bullet::before {
+    background-color: red; /* Couleur de la ligne pour l'étape active */
+}
+
+.step:not(.active) .bullet::before {
+    background-color: #ccc; /* Couleur de la ligne par défaut pour les étapes non actives */
+}

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demande de permis de visite</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="CSS/gestion-des-demandes.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img src="../Images/logo.png" alt="Logo de l'Agence Pénitentiaire"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-color" href=""><i class="bi bi-person-circle"></i> Nom régisseur</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-color" href="">|</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link text-color" href="">Vendredi, 05 juillet 2024</a>
+                        </li>                        
+                    </ul>
+                </div>
+            </div>
+        </nav>        
+    </header>
+
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Toggle Button for Sidebar -->
+            <button class="btn btn-primary d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar" aria-expanded="false" aria-controls="sidebar">
+                <i class="bi bi-list"></i> Menu
+            </button>
+
+            <!-- Sidebar -->
+            <aside class="col-md-3 col-lg-2 sidebar collapse d-md-block" id="sidebar">
+                <div class="maison">
+                    <h6>Nom de la maison d'arrêt</h6>
+                </div>
+                <ul class="list-unstyled">
+                    <li>
+                        <a class="nav-link texte custom-active-link" href="gestion-des-demandes.html">
+                            <i class="bi bi-file-earmark-text-fill"></i> 
+                            Gestion des demandes
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link texte" href="vérification.html">
+                            <i class="bi bi-patch-check-fill"></i>
+                            Vérifier un document
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link texte" href="statistique.html">
+                            <i class="bi bi-bar-chart-fill"></i> 
+                            Statistiques
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link texte" href="">
+                            <i class="bi bi-gear-fill"></i>
+                            Paramètres
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+
+            <!-- Main Content -->
+            <main class="col-md-9 col-lg-10 main-content">
+                <section>
+                    <div class="container mt-4">
+                        <div class="row mb-3">
+                            
+                        </div>
+                        
+                        <div class="table-responsive card-tableau">
+                            <p class="d-inline-flex gap-1">
+                                <a href="gestion-des-demandes.html" class="btn" role="button"><i class="bi bi-arrow-left-short"></i>Précédent</a>
+                            </p>
+                              
+                            <div class="d-flex align-items-center justify-content-between">
+                                <h4>Demande N° #0000000000</h4>
+                                <button type="button" class="btn btn-secondary" style="margin-bottom: 10px;">En attent</button>
+                            </div>
+                            <table class="table table-bordered">
+                                <tbody>
+                                    <tr>
+                                        <td>Nom du demandeur</td>
+                                        <td>Dossou Emmanuelle Fifa</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sexe</td>
+                                        <td>Féminin</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Adresse géographique</td>
+                                        <td>Fidjrosse Kpota</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Nationalité</td>
+                                        <td>Béninoise</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Référence pièce d'identité</td>
+                                        <td>B01209808</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Adresse postal</td>
+                                        <td>01BP 2354</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Département</td>
+                                        <td>Littoral</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Communue</td>
+                                        <td>Cotonou</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pays</td>
+                                        <td>Bénin</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Email</td>
+                                        <td>Dossouemma@gmail.com</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Numéro</td>
+                                        <td>6666666666</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Profession</td>
+                                        <td>Enseignante</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Qualité</td>
+                                        <td>Enseignante</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Titre</td>
+                                        <td>N/A</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Lien avec la personne incarcérée</td>
+                                        <td>Frère</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Nom de la personne incarcérée</td>
+                                        <td>Dossou</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Prénom</td>
+                                        <td>Raoul</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sexe</td>
+                                        <td>Masculin</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Motif de la visite</td>
+                                        <td>Motif de la visite</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Lieu de détention</td>
+                                        <td>Lieu de détention</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Fréquence de visite</td>
+                                        <td>Unique</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pièce justificatif</td>
+                                        <td style="color: rgb(6, 148, 167);">image_passport.png</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <button type="button" class="btn btn-success custom-btn">VALIDER</button>
+                            <button type="button" class="btn btn-secondary custom-btn">DEMANDER MISE À JOUR</button>
+                            <button type="button" class="btn btn-danger custom-btn">REJETER</button>
+                        </div>
+                    </div>                    
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <!-- Fixed Button to Show Sidebar -->
+    <button class="btn btn-secondary" type="button" id="sidebarToggle" data-bs-toggle="collapse" data-bs-target="#sidebar" aria-expanded="false" aria-controls="sidebar">
+        <i class="bi bi-list"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

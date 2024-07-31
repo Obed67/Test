@@ -1,0 +1,161 @@
+/* Général */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0; /* Ajouter cette ligne pour s'assurer qu'il n'y a pas de marge par défaut */
+}
+
+body {
+    overflow-x: hidden; /* Empêche le défilement horizontal */
+}
+
+.header, .footer, .main-content {
+    width: 100%;
+    overflow: hidden;
+}
+
+header{
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    top: 0; /* Ajouter pour fixer le header en haut de la page */
+}
+
+/* Navbar */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem 1rem;
+}
+
+.navbar-nav .nav-link {
+    font-weight: 500;
+}
+
+.navbar-brand img {
+    max-height: 50px;
+    width: auto;
+}
+
+.btn-custom-connect {
+    background-color: #1a464c;
+    border-color: #1a464c;
+    color: #fff;
+}
+
+.nav-item a.active{
+    color: #de9200 !important;  /* Pas encore */
+}
+
+.btn-custom-connect:hover {
+    background-color: #14353a;
+    border-color: #14353a;
+    color: #fff;
+}
+
+.btn-custom-connect .bi {
+    margin-right: 0.5rem;
+}
+
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.object-fit-cover {
+    object-fit: cover;
+}
+
+.mt-3 {
+    margin-top: 1rem;
+}
+
+.mt-2 {
+    margin-top: 0.5rem;
+}
+
+.container {
+    max-width: 100%;
+}
+
+
+/* Style pour la section contenant l'image */
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+
+.image-container .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #162222;
+    opacity: 0.7;
+    z-index: 1;
+}
+
+.image-container img {
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-container .text-center {
+    z-index: 1;
+    width: 100%;
+}
+
+/* Style pour les boutons sur l'image */
+.btn-custom-primary {
+    background-color: #1a464c;
+    border-color: #1a464c;
+    color: #fff;
+}
+
+.btn-custom-primary:hover {
+    background-color: #14353a;
+    border-color: #14353a;
+    color: #fff;
+}
+
+.btn-custom-secondary {
+    background-color: #1a464c;
+    border-color: #1a464c;
+    color: #fff;
+}
+
+.btn-custom-secondary:hover {
+    background-color: #14353a;
+    border-color: #14353a;
+    color: #fff;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: #fff;
+}
+
+footer .list-unstyled li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer .list-unstyled li a:hover {
+    text-decoration: underline;
+}
+
+footer p{
+	padding-bottom: 0px;
+    text-align: center;
+}

@@ -1,0 +1,29 @@
+.main-content {
+    padding-top: 100px;
+    padding-bottom: 70px;
+    background-color: #eef1f8;
+}
+
+.mb-3.d-flex.justify-content-between.align-items-center {
+    margin-bottom: 0.5rem !important;
+}
+
+.card-text{
+    padding-top: 5%;
+}
+
+.btn-login{
+    background: #de9200;
+    border-color: #de9200;
+}
+
+.btn-login:hover {
+    background-color: #1a464c;
+    border-color: #1a464c;
+    color: #fff;
+}
+
+.input-group-text {
+    cursor: pointer;
+    border-left: none;
+}
